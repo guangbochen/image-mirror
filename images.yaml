@@ -10,7 +10,7 @@ registry.k8s.io/sig-storage/snapshot-controller:v8.0.1:
 docker.io/rancher/system-upgrade-controller:v0.14.2:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rancher-system-upgrade-controller
   - ghcr.io/llmos-ai/mirrored-rancher-system-upgrade-controller
-docker.io/bitnami/os-shell:12-debian-12-r27:
+docker.io/bitnami/os-shell:12-debian-12-r33:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-os-shell
   - ghcr.io/llmos-ai/mirrored-bitnami-os-shell
 docker.io/bitnami/redis:7.4.1-debian-12-r2:
