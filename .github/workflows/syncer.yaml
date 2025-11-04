@@ -34,6 +34,8 @@ jobs:
           VOLC_PASSWD: ${{ secrets.VOLC_PASSWD }}
           GHCR_USERNAME: ${{ github.repository_owner }}
           GHCR_PASSWD: ${{ secrets.GITHUB_TOKEN }}
+          ALIYUNCS_USERNAME: ${{ ALIYUNCS_USERNAME }}
+          ALIYUNCS_PASSWD: ${{ ALIYUNCS_PASSWD }}
       - name: Failure Slack Notification
         if: failure()
         id: slack-failure
