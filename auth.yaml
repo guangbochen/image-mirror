@@ -4,3 +4,6 @@ llmos-ai-cn-beijing.cr.volces.com:
 ghcr.io:
   username: "${GHCR_USERNAME}"
   password: "${GHCR_PASSWD}"
+registry.cn-hangzhou.aliyuncs.com:
+  username: "${ALIYUNCS_USERNAME}"
+  password: "${ALIYUNCS_PASSWD}"
