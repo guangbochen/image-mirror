@@ -1,152 +1,154 @@
-ghcr.io/llmos-ai/system-installer-llmos-operator:/^v\d+\.\d+\.\d+(-rc\d+)?$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/system-installer-llmos-operator
-ghcr.io/llmos-ai/llmos-operator:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/llmos-operator
-ghcr.io/llmos-ai/llmos-operator-webhook:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/llmos-operator-webhook
-ghcr.io/llmos-ai/system-charts-repo:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/system-charts-repo
-ghcr.io/llmos-ai/llmos-gpu-stack:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/llmos-gpu-stack
-ghcr.io/llmos-ai/node-upgrade:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/node-upgrade
-docker.io/rancher/system-agent-installer-k3s:/^v(?:1\.(?:3[3-9]|\d{3,})\.\d+|[2-9]\d*\.\d+\.\d+)(?:\-k3s\d+)?$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rancher-system-agent-installer-k3s
-  - ghcr.io/llmos-ai/mirrored-rancher-system-agent-installer-k3s
-docker.io/rancher/system-agent-installer-rke2:/^v(?:1\.(?:3[3-9]|\d{3,})\.\d+|[2-9]\d*\.\d+\.\d+)(?:\-rke2\d+)?$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rancher-system-agent-installer-rke2
-  - ghcr.io/llmos-ai/mirrored-rancher-system-agent-installer-rke2
-docker.io/rancher/system-upgrade-controller:/^(0\.(1[4-9]|[2-9]\d*)\.\d+|[1-9]\d*\.\d+\.\d+)$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rancher-system-upgrade-controller
-  - ghcr.io/llmos-ai/mirrored-rancher-system-upgrade-controller
-docker.io/bitnami/os-shell:12-debian-12-r33:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-os-shell
-  - ghcr.io/llmos-ai/mirrored-bitnami-os-shell
-docker.io/bitnami/redis:7.4.1-debian-12-r2:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-redis
-  - ghcr.io/llmos-ai/mirrored-bitnami-redis
-docker.io/rook/ceph:v1.17.2:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rook-ceph
-  - ghcr.io/llmos-ai/mirrored-rook-ceph
-quay.io/cephcsi/cephcsi:v3.14.0:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-cephcsi-cephcsi
-  - ghcr.io/llmos-ai/mirrored-cephcsi-cephcsi
-quay.io/ceph/ceph:v19.2.2:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-ceph-ceph
-  - ghcr.io/llmos-ai/mirrored-ceph-ceph
-quay.io/csiaddons/k8s-sidecar:v0.12.0:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-csiaddons-k8s-sidecar
-  - ghcr.io/llmos-ai/mirrored-csiaddons-k8s-sidecar
-docker.io/volcanosh/vc-controller-manager:/^v((1\.(1[0-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-controller-manager
-  - ghcr.io/llmos-ai/mirrored-volcanosh-vc-controller-manager
-docker.io/volcanosh/vc-scheduler:/^v((1\.(1[0-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-scheduler
-  - ghcr.io/llmos-ai/mirrored-volcanosh-vc-scheduler
-docker.io/volcanosh/vc-webhook-manager:/^v((1\.(1[0-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-webhook-manager
-  - ghcr.io/llmos-ai/mirrored-volcanosh-vc-webhook-manager
-docker.io/projecthami/volcano-vgpu-device-plugin:/^v((1\.(9\.\d+|[1-9]\d+\.\d+)|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-projecthami-volcano-vgpu-device-plugin
-  - ghcr.io/llmos-ai/mirrored-projecthami-volcano-vgpu-device-plugin
-quay.io/kuberay/operator:/^v((1\.(2\.[0-9]+|[3-9]\.\d+|[1-9]\d+\.\d+)|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-kuberay-operator
-  - ghcr.io/llmos-ai/mirrored-kuberay-operator
-registry.k8s.io/nfd/node-feature-discovery:/^v((0\.(1[6-9]|[2-9]\d*)\.\d+|[1-9]\d*\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nfd-node-feature-discovery
-  - ghcr.io/llmos-ai/mirrored-nfd-node-feature-discovery
-registry.k8s.io/sig-storage/csi-attacher:/^v((4\.(6\.\d+|[7-9]\.\d+|[1-9]\d+\.\d+)|[5-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-attacher
-  - ghcr.io/llmos-ai/mirrored-sig-storage-csi-attacher
-registry.k8s.io/sig-storage/csi-provisioner:/^v((5\.\d+\.\d+|[6-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-provisioner
-  - ghcr.io/llmos-ai/mirrored-sig-storage-csi-provisioner
-registry.k8s.io/sig-storage/csi-resizer:/^v((1\.(1[1-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-resizer
-  - ghcr.io/llmos-ai/mirrored-sig-storage-csi-resizer
-registry.k8s.io/sig-storage/csi-snapshotter:/^v((8\.\d+\.\d+|[9-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-snapshotter
-  - ghcr.io/llmos-ai/mirrored-sig-storage-csi-snapshotter
-registry.k8s.io/sig-storage/snapshot-controller:/^v((8\.\d+\.\d+|[9-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-snapshot-controller
-  - ghcr.io/llmos-ai/mirrored-sig-storage-snapshot-controller
-registry.k8s.io/sig-storage/csi-node-driver-registrar:/^v((2\.(1[1-9]|\d{2,})\.\d+|[3-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-node-driver-registrar
-  - ghcr.io/llmos-ai/mirrored-sig-storage-csi-node-driver-registrar
-registry.k8s.io/ingress-nginx/kube-webhook-certgen:v20221220-controller-v1.5.1-58-g787ea74b6:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-ingress-nginx-kube-webhook-certgen
-  - ghcr.io/llmos-ai/mirrored-ingress-nginx-kube-webhook-certgen
-registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.14.0:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-kube-state-metrics
-  - ghcr.io/llmos-ai/mirrored-kube-state-metrics
-docker.io/grafana/grafana:10.4.9:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-grafana
-  - ghcr.io/llmos-ai/mirrored-grafana
-docker.io/library/nginx:1.24.0-alpine:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-library-nginx
-  - ghcr.io/llmos-ai/mirrored-library-nginx
-docker.io/rayproject/ray:2.35.0,2.35.0-gpu:
-  - ghcr.io/llmos-ai/mirrored-rayproject-ray
-docker.io/vllm/vllm-openai:v0.10.0:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-vllm-vllm-openai
-  - ghcr.io/llmos-ai/mirrored-vllm-vllm-openai
-docker.io/langflowai/langflow:/^(1\.(5\.[0-9]|[6-9]\.\d+)|1\.[6-9]\.\d+|[2-9]\d*\.\d+\.\d+)(\.post\d+)?$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langflowai-langflow
-  - ghcr.io/llmos-ai/mirrored-langflowai-langflow
-docker.io/langflowai/langflow-frontend:/^(1\.(5\.[0-9]|[6-9]\.\d+)|1\.[6-9]\.\d+|[2-9]\d*\.\d+\.\d+)(\.post\d+)?$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langflowai-langflow-frontend
-  - ghcr.io/llmos-ai/mirrored-langflowai-langflow-frontend
-docker.io/bitnami/postgresql:17.5.0-debian-12-r20:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-postgresql
-  - ghcr.io/llmos-ai/mirrored-bitnami-postgresql
-cr.weaviate.io/semitechnologies/weaviate:/^(1\.30\.(6|[7-9]|\d{2,})|1\.(3[1-9]|[4-9]\d*)\.\d+|[2-9]\d*\.\d+\.\d+)$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-semitechnologies-weaviate
-  - ghcr.io/llmos-ai/mirrored-semitechnologies-weaviate
-docker.io/bitnami/zookeeper:3.9.3-debian-12-r8:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-zookeeper
-  - ghcr.io/llmos-ai/mirrored-bitnami-zookeeper
-docker.io/bitnami/clickhouse:25.2.1-debian-12-r0:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-clickhouse
-  - ghcr.io/llmos-ai/mirrored-bitnami-clickhouse
-docker.io/bitnami/valkey:8.0.2-debian-12-r2:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-valkey
-  - ghcr.io/llmos-ai/mirrored-bitnami-valkey
-docker.io/bitnami/minio:2024.12.18-debian-12-r1:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-minio
-  - ghcr.io/llmos-ai/mirrored-bitnami-minio
-docker.io/langfuse/langfuse:3.82.0:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langfuse-langfuse
-  - ghcr.io/llmos-ai/mirrored-langfuse-langfuse
-docker.io/langfuse/langfuse-worker:3.82.0:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langfuse-langfuse-worker
-  - ghcr.io/llmos-ai/mirrored-langfuse-langfuse-worker
-nvcr.io/nvidia/gpu-operator:v25.3.2:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-gpu-operator
-  - ghcr.io/llmos-ai/mirrored-nvidia-gpu-operator
-nvcr.io/nvidia/cloud-native/gpu-operator-validator:v25.3.2:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-gpu-operator-validator
-  - ghcr.io/llmos-ai/mirrored-nvidia-gpu-operator-validator
-nvcr.io/nvidia/k8s/container-toolkit:v1.17.8-ubuntu20.04:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-container-toolkit
-  - ghcr.io/llmos-ai/mirrored-nvidia-container-toolkit
-nvcr.io/nvidia/k8s-device-plugin:v0.17.3:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-k8s-device-plugin
-  - ghcr.io/llmos-ai/mirrored-nvidia-k8s-device-plugin
-nvcr.io/nvidia/k8s/dcgm-exporter:4.2.3-4.1.3-ubuntu22.04:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-dcgm-exporter
-  - ghcr.io/llmos-ai/mirrored-nvidia-dcgm-exporter
-nvcr.io/nvidia/cloud-native/k8s-mig-manager:v0.12.2-ubuntu20.04:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-k8s-mig-manager
-  - ghcr.io/llmos-ai/mirrored-nvidia-k8s-mig-manager
-quay.io/prometheus/alertmanager:v0.27.0:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-alertmanager
-  - ghcr.io/llmos-ai/mirrored-prometheus-alertmanager
-quay.io/prometheus-operator/prometheus-config-reloader:v0.78.1:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-operator-prometheus-config-reloader
-  - ghcr.io/llmos-ai/mirrored-prometheus-operator-prometheus-config-reloader
-quay.io/kiwigrid/k8s-sidecar:1.28.0:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-kiwigrid-k8s-sidecar
-  - ghcr.io/llmos-ai/mirrored-kiwigrid-k8s-sidecar
-quay.io/prometheus-operator/prometheus-operator:v0.78.1:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-operator-prometheus-operator
-  - ghcr.io/llmos-ai/mirrored-prometheus-operator-prometheus-operator
-quay.io/prometheus/node-exporter:v1.8.2:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-node-exporter
-  - ghcr.io/llmos-ai/mirrored-prometheus-node-exporter
-quay.io/prometheus/prometheus:v2.55.1:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-prometheus
-  - ghcr.io/llmos-ai/mirrored-prometheus-prometheus
+docker.io/vllm/vllm-openai:v0.11.0:
+  - registry.cn-hangzhou.aliyuncs.com/llmos-ai/mirrored-vllm-vllm-openai
+# ghcr.io/llmos-ai/system-installer-llmos-operator:/^v\d+\.\d+\.\d+(-rc\d+)?$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/system-installer-llmos-operator
+# ghcr.io/llmos-ai/llmos-operator:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/llmos-operator
+# ghcr.io/llmos-ai/llmos-operator-webhook:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/llmos-operator-webhook
+# ghcr.io/llmos-ai/system-charts-repo:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/system-charts-repo
+# ghcr.io/llmos-ai/llmos-gpu-stack:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/llmos-gpu-stack
+# ghcr.io/llmos-ai/node-upgrade:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/node-upgrade
+# docker.io/rancher/system-agent-installer-k3s:/^v(?:1\.(?:3[3-9]|\d{3,})\.\d+|[2-9]\d*\.\d+\.\d+)(?:\-k3s\d+)?$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rancher-system-agent-installer-k3s
+#   - ghcr.io/llmos-ai/mirrored-rancher-system-agent-installer-k3s
+# docker.io/rancher/system-agent-installer-rke2:/^v(?:1\.(?:3[3-9]|\d{3,})\.\d+|[2-9]\d*\.\d+\.\d+)(?:\-rke2\d+)?$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rancher-system-agent-installer-rke2
+#   - ghcr.io/llmos-ai/mirrored-rancher-system-agent-installer-rke2
+# docker.io/rancher/system-upgrade-controller:/^(0\.(1[4-9]|[2-9]\d*)\.\d+|[1-9]\d*\.\d+\.\d+)$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rancher-system-upgrade-controller
+#   - ghcr.io/llmos-ai/mirrored-rancher-system-upgrade-controller
+# docker.io/bitnami/os-shell:12-debian-12-r33:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-os-shell
+#   - ghcr.io/llmos-ai/mirrored-bitnami-os-shell
+# docker.io/bitnami/redis:7.4.1-debian-12-r2:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-redis
+#   - ghcr.io/llmos-ai/mirrored-bitnami-redis
+# docker.io/rook/ceph:v1.17.2:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rook-ceph
+#   - ghcr.io/llmos-ai/mirrored-rook-ceph
+# quay.io/cephcsi/cephcsi:v3.14.0:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-cephcsi-cephcsi
+#   - ghcr.io/llmos-ai/mirrored-cephcsi-cephcsi
+# quay.io/ceph/ceph:v19.2.2:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-ceph-ceph
+#   - ghcr.io/llmos-ai/mirrored-ceph-ceph
+# quay.io/csiaddons/k8s-sidecar:v0.12.0:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-csiaddons-k8s-sidecar
+#   - ghcr.io/llmos-ai/mirrored-csiaddons-k8s-sidecar
+# docker.io/volcanosh/vc-controller-manager:/^v((1\.(1[0-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-controller-manager
+#   - ghcr.io/llmos-ai/mirrored-volcanosh-vc-controller-manager
+# docker.io/volcanosh/vc-scheduler:/^v((1\.(1[0-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-scheduler
+#   - ghcr.io/llmos-ai/mirrored-volcanosh-vc-scheduler
+# docker.io/volcanosh/vc-webhook-manager:/^v((1\.(1[0-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-webhook-manager
+#   - ghcr.io/llmos-ai/mirrored-volcanosh-vc-webhook-manager
+# docker.io/projecthami/volcano-vgpu-device-plugin:/^v((1\.(9\.\d+|[1-9]\d+\.\d+)|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-projecthami-volcano-vgpu-device-plugin
+#   - ghcr.io/llmos-ai/mirrored-projecthami-volcano-vgpu-device-plugin
+# quay.io/kuberay/operator:/^v((1\.(2\.[0-9]+|[3-9]\.\d+|[1-9]\d+\.\d+)|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-kuberay-operator
+#   - ghcr.io/llmos-ai/mirrored-kuberay-operator
+# registry.k8s.io/nfd/node-feature-discovery:/^v((0\.(1[6-9]|[2-9]\d*)\.\d+|[1-9]\d*\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nfd-node-feature-discovery
+#   - ghcr.io/llmos-ai/mirrored-nfd-node-feature-discovery
+# registry.k8s.io/sig-storage/csi-attacher:/^v((4\.(6\.\d+|[7-9]\.\d+|[1-9]\d+\.\d+)|[5-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-attacher
+#   - ghcr.io/llmos-ai/mirrored-sig-storage-csi-attacher
+# registry.k8s.io/sig-storage/csi-provisioner:/^v((5\.\d+\.\d+|[6-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-provisioner
+#   - ghcr.io/llmos-ai/mirrored-sig-storage-csi-provisioner
+# registry.k8s.io/sig-storage/csi-resizer:/^v((1\.(1[1-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-resizer
+#   - ghcr.io/llmos-ai/mirrored-sig-storage-csi-resizer
+# registry.k8s.io/sig-storage/csi-snapshotter:/^v((8\.\d+\.\d+|[9-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-snapshotter
+#   - ghcr.io/llmos-ai/mirrored-sig-storage-csi-snapshotter
+# registry.k8s.io/sig-storage/snapshot-controller:/^v((8\.\d+\.\d+|[9-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-snapshot-controller
+#   - ghcr.io/llmos-ai/mirrored-sig-storage-snapshot-controller
+# registry.k8s.io/sig-storage/csi-node-driver-registrar:/^v((2\.(1[1-9]|\d{2,})\.\d+|[3-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-node-driver-registrar
+#   - ghcr.io/llmos-ai/mirrored-sig-storage-csi-node-driver-registrar
+# registry.k8s.io/ingress-nginx/kube-webhook-certgen:v20221220-controller-v1.5.1-58-g787ea74b6:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-ingress-nginx-kube-webhook-certgen
+#   - ghcr.io/llmos-ai/mirrored-ingress-nginx-kube-webhook-certgen
+# registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.14.0:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-kube-state-metrics
+#   - ghcr.io/llmos-ai/mirrored-kube-state-metrics
+# docker.io/grafana/grafana:10.4.9:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-grafana
+#   - ghcr.io/llmos-ai/mirrored-grafana
+# docker.io/library/nginx:1.24.0-alpine:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-library-nginx
+#   - ghcr.io/llmos-ai/mirrored-library-nginx
+# docker.io/rayproject/ray:2.35.0,2.35.0-gpu:
+#   - ghcr.io/llmos-ai/mirrored-rayproject-ray
+# docker.io/vllm/vllm-openai:v0.10.0:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-vllm-vllm-openai
+#   - ghcr.io/llmos-ai/mirrored-vllm-vllm-openai
+# docker.io/langflowai/langflow:/^(1\.(5\.[0-9]|[6-9]\.\d+)|1\.[6-9]\.\d+|[2-9]\d*\.\d+\.\d+)(\.post\d+)?$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langflowai-langflow
+#   - ghcr.io/llmos-ai/mirrored-langflowai-langflow
+# docker.io/langflowai/langflow-frontend:/^(1\.(5\.[0-9]|[6-9]\.\d+)|1\.[6-9]\.\d+|[2-9]\d*\.\d+\.\d+)(\.post\d+)?$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langflowai-langflow-frontend
+#   - ghcr.io/llmos-ai/mirrored-langflowai-langflow-frontend
+# docker.io/bitnami/postgresql:17.5.0-debian-12-r20:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-postgresql
+#   - ghcr.io/llmos-ai/mirrored-bitnami-postgresql
+# cr.weaviate.io/semitechnologies/weaviate:/^(1\.30\.(6|[7-9]|\d{2,})|1\.(3[1-9]|[4-9]\d*)\.\d+|[2-9]\d*\.\d+\.\d+)$/:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-semitechnologies-weaviate
+#   - ghcr.io/llmos-ai/mirrored-semitechnologies-weaviate
+# docker.io/bitnami/zookeeper:3.9.3-debian-12-r8:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-zookeeper
+#   - ghcr.io/llmos-ai/mirrored-bitnami-zookeeper
+# docker.io/bitnami/clickhouse:25.2.1-debian-12-r0:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-clickhouse
+#   - ghcr.io/llmos-ai/mirrored-bitnami-clickhouse
+# docker.io/bitnami/valkey:8.0.2-debian-12-r2:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-valkey
+#   - ghcr.io/llmos-ai/mirrored-bitnami-valkey
+# docker.io/bitnami/minio:2024.12.18-debian-12-r1:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-minio
+#   - ghcr.io/llmos-ai/mirrored-bitnami-minio
+# docker.io/langfuse/langfuse:3.82.0:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langfuse-langfuse
+#   - ghcr.io/llmos-ai/mirrored-langfuse-langfuse
+# docker.io/langfuse/langfuse-worker:3.82.0:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langfuse-langfuse-worker
+#   - ghcr.io/llmos-ai/mirrored-langfuse-langfuse-worker
+# nvcr.io/nvidia/gpu-operator:v25.3.2:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-gpu-operator
+#   - ghcr.io/llmos-ai/mirrored-nvidia-gpu-operator
+# nvcr.io/nvidia/cloud-native/gpu-operator-validator:v25.3.2:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-gpu-operator-validator
+#   - ghcr.io/llmos-ai/mirrored-nvidia-gpu-operator-validator
+# nvcr.io/nvidia/k8s/container-toolkit:v1.17.8-ubuntu20.04:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-container-toolkit
+#   - ghcr.io/llmos-ai/mirrored-nvidia-container-toolkit
+# nvcr.io/nvidia/k8s-device-plugin:v0.17.3:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-k8s-device-plugin
+#   - ghcr.io/llmos-ai/mirrored-nvidia-k8s-device-plugin
+# nvcr.io/nvidia/k8s/dcgm-exporter:4.2.3-4.1.3-ubuntu22.04:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-dcgm-exporter
+#   - ghcr.io/llmos-ai/mirrored-nvidia-dcgm-exporter
+# nvcr.io/nvidia/cloud-native/k8s-mig-manager:v0.12.2-ubuntu20.04:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-k8s-mig-manager
+#   - ghcr.io/llmos-ai/mirrored-nvidia-k8s-mig-manager
+# quay.io/prometheus/alertmanager:v0.27.0:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-alertmanager
+#   - ghcr.io/llmos-ai/mirrored-prometheus-alertmanager
+# quay.io/prometheus-operator/prometheus-config-reloader:v0.78.1:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-operator-prometheus-config-reloader
+#   - ghcr.io/llmos-ai/mirrored-prometheus-operator-prometheus-config-reloader
+# quay.io/kiwigrid/k8s-sidecar:1.28.0:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-kiwigrid-k8s-sidecar
+#   - ghcr.io/llmos-ai/mirrored-kiwigrid-k8s-sidecar
+# quay.io/prometheus-operator/prometheus-operator:v0.78.1:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-operator-prometheus-operator
+#   - ghcr.io/llmos-ai/mirrored-prometheus-operator-prometheus-operator
+# quay.io/prometheus/node-exporter:v1.8.2:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-node-exporter
+#   - ghcr.io/llmos-ai/mirrored-prometheus-node-exporter
+# quay.io/prometheus/prometheus:v2.55.1:
+#   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-prometheus
+#   - ghcr.io/llmos-ai/mirrored-prometheus-prometheus
